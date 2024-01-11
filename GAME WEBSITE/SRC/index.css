@@ -1,0 +1,228 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+}
+
+nav ul {
+    padding: 0;
+    list-style: none;
+    text-align: left;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+}
+
+main {
+    display: flex;
+    justify-content: space-between;
+}
+
+.news {
+    flex: 3;
+    padding: 20px;
+}
+
+.sidebar {
+    flex: 1;
+    padding: 20px;
+    background-color: #e3e3e3;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+nav button {
+    background-color: #0096FF; /* 亮蓝色背景 */
+    color: white; /* 白色文字 */
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 5px;
+    transition: background-color 0.3s, transform 0.3s;
+    cursor: pointer;
+}
+
+nav button:hover {
+    background-color: #007BFF; /* 鼠标悬停时更深的蓝色 */
+    transform: translateY(-2px); /* 轻微上移，增加互动感 */
+}
+
+nav button:active {
+    background-color: #005FCC; /* 点击时的颜色 */
+    transform: translateY(1px); /* 模拟按钮被按下的效果 */
+}
+
+
+.game-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.game-item {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.game-item img {
+    width: 100%;
+    display: block;
+    transition: transform 0.3s ease;
+}
+
+.game-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.game-item:hover img {
+    transform: scale(1.05);
+}
+
+.game-info {
+    padding: 15px;
+    background-color: #fff;
+    text-align: center;
+}
+
+.game-info h3 {
+    margin-top: 0;
+    color: #333;
+}
+
+.game-info p {
+    color: #666;
+}
+
+.game-info ul {
+    list-style-type: none; /* 去除列表前的点 */
+    padding: 0; /* 去除默认内边距 */
+    text-align: center; /* 居中显示列表项 */
+}
+
+.game-info li {
+    display: inline-block; /* 将列表项并排显示 */
+    margin: 0 auto; /* 增加周围间距 */
+    padding: 5px; /* 内边距 */
+    border: 1px solid #ddd; /* 边框，可根据需要调整颜色和宽度 */
+    vertical-align: top; /* 确保所有列表项在顶部对齐 */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* 平滑过渡效果 */
+}
+
+.game-info li:hover {
+    transform: scale(1.05); /* 鼠标悬停时放大 */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2); /* 添加阴影 */
+}
+
+.game-info img {
+    height: 32.4px; /* 图片高度 */
+    width: 57.6px; /* 图片宽度 */
+    vertical-align: middle; /* 垂直居中 */
+}
+
+.tab-price {
+    display: inline-block; /* 保持内联块显示 */
+    padding: 5px 10px; /* 增加内边距以提供空间 */
+    margin: 0 5px; /* 增加外边距以分隔元素 */
+    font-size: 16px; /* 调整字体大小 */
+    color: #333; /* 设置字体颜色 */
+    font-weight: bold; /* 字体加粗 */
+    background-color: #f8f8f8; /* 背景颜色 */
+    border: 1px solid #ddd; /* 边框 */
+    vertical-align: middle; /* 垂直对齐 */
+    transition: background-color 0.3s, border-color 0.3s; /* 平滑过渡效果 */
+    width: 100%;
+    display: flex;
+}
+
+.tab-price:hover {
+    background-color: #e9e9e9; /* 鼠标悬停时改变背景色 */
+    border-color: #ccc; /* 鼠标悬停时改变边框颜色 */
+}
+
+
+.tab, .price {
+    flex: 1; /* 使每个元素占据等量空间 */
+}
+
+.deep_tab{
+    text-align: left;
+    display: block;
+}
+
+.deep_tab_keys {
+    display: inline;
+    background-color: #4a90e2;
+    color: white;
+    padding: 2px 6px;
+    border-radius: 3px;
+    font-weight: bold;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.15);
+    font-size: 12px;
+    margin: 1px;
+    text-shadow: 0 1px 1px rgba(0, 0, 0, 0.15);
+    transition: all 0.3s ease; /* 平滑过渡效果 */
+    cursor: pointer; /* 将鼠标指针变为手形 */
+}
+
+.deep_tab_keys:hover, .deep_tab_keys:focus {
+    background-color: #3a78d4; /* 悬停或聚焦时更深的背景色 */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.25); /* 增强阴影效果 */
+    transform: scale(1.05); /* 轻微放大 */
+}
+
+/* 可选：为了提高可访问性，当元素处于焦点时去掉轮廓 */
+.deep_tab_keys:focus {
+    outline: none;
+}
+
+.game-name {
+    display: inline-block;
+    color: white; /* 白色字体提高对比 */
+    background-color: #007bff; /* 蓝色背景 */
+    padding: 5px 10px;
+    border-radius: 4px; /* 轻微的圆角 */
+    font-size: 18px; /* 较大的字体尺寸 */
+    font-weight: bold; /* 加粗字体 */
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5); /* 文本阴影增加深度感 */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* 盒子阴影增加立体感 */
+    transition: all 0.3s ease; /* 平滑过渡效果 */
+}
+
+.game-name:hover {
+    background-color: #0056b3; /* 悬停时的深蓝色背景 */
+    transform: scale(1.05); /* 轻微放大 */
+}
